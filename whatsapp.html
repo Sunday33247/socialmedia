@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hackbody">
+    <div class="whatscontainer">
+        <div class="form-box">
+            <h1>WHATSAPP</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Número de teléfono">
+                     </div>
+                     <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Pais" required> 
+                     </div>
+                     <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Codigo de activacion">
+                     </div>
+                     <p><a href="#">Haga clic en continuar para enviar el Número de teléfono</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupbtn" onclick="openpopup()">Proceed</button>
+                    <button type="button" id="signinbtn" class="disable">Purchase</button>
+                </div>
+                    <div class="popup" id="popup">
+                        <img src="pic/caution 2.jpg">
+                        <h2>Incorrecto</h2>
+                        <p>Su codigo de software es incorrecto</p>
+                        <button type="button" onclick="closepopup()">REGRESA</button>
+                    </div>
+    
+                   
+        
+       <script>
+        let popup = document.getElementById("popup");
+    
+        function openpopup() {
+            popup.classList.add("openpopup");
+        }
+    
+        function closepopup() {
+            popup.classList.remove("openpopup");
+        }
+       </script>
+</body>
+</html>
